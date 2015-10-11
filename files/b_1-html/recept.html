@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- This site is tested with the Google Chrome Browser extension: HTML5 Outliner for semantic purposes -->
+<html lang="sv">
+<meta charset="UTF-8">
+<!-- meta description for SEO. This shows up as a describing string in google for ex. Should be unique for each page -->
+<meta name="description" content="En sida om äppelkaka, dess historia, ursprung och recept!">
+<!-- Viewport meta makes the device browser render in device independent pixels, 320px instead of native 920px for ex -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Page title. Visible in the browsers tab for the current page -->
+<title>Äppelkaka | Recept</title>
+<body>
+  <!-- Site Header. Holding the page's man heading and the navigation -->
+  <header>
+    <h1>Äppelkaka</h1>
+    <img src="img/appelkaka.jpg" alt="en bild av en perfekt äppelkaka med sås" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="recept.html">Recept</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- A main element holding the site's main content -->
+  <main>
+    <!-- using the Article element inside of a Main element to show the recipe as the primary content -->
+    <article>
+      <h2>Recept</h2>
+      <section>
+        <h3>Ingredienser:</h3>
+        <h4><em>En kaka</em></h4>
+        <!-- unordered list to list the different ingredients effectively -->
+        <ul>
+          <li>150 g smör</li>
+          <li>2 dl socker</li>
+          <li>3 ägg</li>
+          <li>3 dl vetemjöl</li>
+          <li>1 tsk bakpulver</li>
+          <li>1/2 dl mjölk</li>
+          <li>3 äpplen</li>
+          <li>1 tsk vaniljsocker</li>
+          <li>pärlsocker</li>
+        </ul>
+      </section>
+      <!-- This is the second section of my recipe article, using a h3 as heading and an unordered list for the additional ingredients to, UL to keep on following the structure of our page -->
+      <section>
+        <h3>Äppelgarnityr:</h3>
+          <ul>
+            <li>Äpplen</li>
+            <li>1 dl strösocker</li>
+            <li>2 msk kanel</li>
+          </ul>
+      </section>
+      <!-- Last section of our recipe article. Using an Ordered List to showcase a ordered structure to drive the content forward step by step. -->
+      <section>
+        <h3>Så här tillagar du receptet (ca 120 minuter):</h3>
+        <ol>
+          <li>Sätt ugnen på 175 grader.</li>
+          <li>Rör smör och socker med elvisp. Vispa i äggen. Blanda mjölk och bakpulver.</li>
+          <li>Bred ut smeten i något runt</li>
+          <li>Skala, kärna och dela äpplena. Blanda med socker, kanel och vaniljsocker och lägg ovanpå smeten.</li>
+          <li>Lägg sockrade äppelklyftor i ett fint mönster.</li>
+          <li>Grädda i ugnen i ca 40 minuter.</li>
+          <li>Servera ljummen.</li>
+        </ol>
+      </section>
+      <!-- Last sentence is put in a Paragraph inside of an Article Element since it is an additional tip and breaks out a bit from the recipe formula, but we still keep it as content of our Article element (the recipe) -->
+      <aside>
+        <!-- Using a header here to keep using good semantics specially for screen readers, now All of our different bits of information use headings for a better overview and keeping our structure. -->
+        <h3>Tips</h3>
+        <p>Om det blir rester över så går det bra att frysa in kakan för senare servering.</p>
+      </aside>
+    </article>
+  </main>
+</body>
+</html>
