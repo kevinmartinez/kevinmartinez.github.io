@@ -17,6 +17,21 @@ h6 {
   font-family: 'Raleway', sans-serif;
 }
 
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.kevin-logo {
+  max-width: 200px;
+}
+
 .nav-header {
   background: #415457;
 }
@@ -203,7 +218,9 @@ my text editors right side
 
 @media (min-width: 800px) {
 
-
+  .kevin-logo {
+    max-width: 100%;
+  }
 
 
   p {
