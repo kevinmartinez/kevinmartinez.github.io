@@ -124,47 +124,47 @@ h2 {
 .progress {
     min-height: 2em;
     margin-bottom: 3.5em;
-    max-width: 80%;
+    width: 100%;
 }
 
 .progress-bar {
   background-color: #0171BB;
-  width: 75%;
+  width: 100%;
 }
 
 .html-progress-bar {
   background-color: #E44D26;
-  width: 95%;
+  width: 100%;
 }
 
 .js-progress-bar {
   background-color: #F9DB3D;
-  width: 60%;
+  width: 100%;
 }
 
 .git-progress-bar {
   background-color: #ccc;
-  width: 92%;
+  width: 100%;
 }
 
 .gulp-progress-bar {
   background-color: tomato;
-  width: 80%;
+  width: 100%;
 }
 
 .c-progress-bar {
   background-color: black;
-  width: 15%;
+  width: 100%;
 }
 
 .illustrator-progress-bar {
   background-color: #F8B049;
-  width: 70%;
+  width: 100%;
 }
 
 .ps-progress-bar {
   background-color: #36B2DE;
-  width: 75%;
+  width: 100%;
 }
 
 /* main footer */
@@ -178,6 +178,10 @@ h2 {
   font-weight: 800;
   text-transform: uppercase;
   color: #fff;
+}
+
+.footer-margin {
+  margin-top: 2.3rem;
 }
 
 .adios {
@@ -302,7 +306,7 @@ my text editors right side
     padding: 5em 0;
   }
   .main-footer {
-    padding: 2em 0 5em;
+    padding: 4em 0 2em;
   }
 
 
