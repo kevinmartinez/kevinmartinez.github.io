@@ -9,24 +9,20 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800,300,600" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- 1. Load platform support before any code that touches the DOM. -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <script src="bower_components/webcomponentsjs/CustomElements.js"></script>
+    <!-- 2. Load the component using an HTML Import -->
+    <link rel="import" href="elements/my-element.html">
+    <link rel="import" href="bower_components/paper-item/paper-item.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/iron-range-behaviour/iron-range-behaviour.html">
+    <link rel="import" href="bower_components/paper-progress/paper-progress.html">
   </head>
   <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- main navigation -->
     <header class="container-fluid nav-header">
@@ -59,20 +55,12 @@
       </div>
     </header>
 
-
-
-
-
-
-
-
-
-
-
     <!--  don't forget the <main> element
-  </main> -->
+    </main> -->
 
-      <!-- Presentation section -->
+    <!-- TODO: #1 Semantics, #2 Polymer, #3 srcset -->
+
+    <!-- Presentation section -->
     <div class="presentation-section">
       <div class="container">
         <div class="row">
@@ -80,22 +68,12 @@
             <img src="img/kevin_profile_new.jpg" alt="" class="img-circle profile-img hidden-xs" />
             <h1>Kevin Martinez
             <span>Web Designer &amp; Developer</span>
+            <my-element></my-element>
             </h1>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- My introduction text... -->
     <!-- Intro section -->
@@ -104,6 +82,20 @@
         <div class="row">
           <div class="col-md-12">
             <h2 class="text-center">Welcome to my site</h2>
+
+            <!-- TODO: 29/11 2015: Clean up test Polymer components and implement final components -->
+            <paper-item>
+              <paper-item-body two-line>
+                <div>Show your status</div>
+                <div secondary>Your status is visible to everyone</div>
+              </paper-item-body>
+              <iron-icon icon="warning"></iron-icon>
+            </paper-item>
+            <paper-input label="Your name here"></paper-input>
+            <demo-element></demo-element>
+            <progress-element></progress-element>
+
+            <!-- Main text -->
             <article class="intro-text text-left">
               <p class="lead">I am a designer, developer and a dreamer</p>
               <p>My name is Kevin, i am a open minded web artist and a code monkey with a lot of love for HTML, CSS &amp; JavaScript.</p>
@@ -123,19 +115,7 @@
       </div>
     </div><!-- Intro section end -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Quote section -->
     <section class="quote-section intro-quote">
       <div class="container">
         <div class="row">
@@ -150,20 +130,9 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Portfolio section -->
     <div class="portfolio-section" id="work">
       <div class="container">
-
         <div class="row">
           <div class="col-md-12">
             <h2 class="text-center">Portfolio</h2>
@@ -204,16 +173,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
 
     <!-- contact section with contact-form -->
     <section class="skills">
@@ -260,20 +219,7 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Quote section -->
     <section class="quote-section outro-quote text-center">
       <div class="container">
         <div class="row">
@@ -288,26 +234,7 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- a footer made with love -->
+    <!-- A footer made with love -->
     <footer class="main-footer" id="contact">
       <div class="container">
         <div class="row">
@@ -331,12 +258,10 @@
             <p>Tutsplus</p>
           </div>
         </div>
-
       </div>
     </footer>
 
-
-
+    <!-- Scripts -->
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
