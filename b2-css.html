@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kevin Martinez | Task B_2 CSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:700,300|Source+Sans+Pro:400,300,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800,300,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 1. Load platform support before any code that touches the DOM. -->
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <script src="bower_components/webcomponentsjs/CustomElements.js"></script>
+    <!-- 2. Load the component using an HTML Import -->
+    <link rel="import" href="elements/my-element.html">
+    <link rel="import" href="bower_components/paper-item/paper-item.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+    <link rel="import" href="bower_components/paper-input/paper-input.html">
+    <link rel="import" href="bower_components/iron-icon/iron-icon.html">
+    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="bower_components/iron-range-behaviour/iron-range-behaviour.html">
+    <link rel="import" href="bower_components/paper-progress/paper-progress.html">
+  </head>
+  <body>
+
+    <!-- main navigation -->
+    <header class="container-fluid nav-header">
+      <div class="row">
+        <div class="col-md-4 col-xs-2">
+          <!-- Site Logo -->
+          <a href="index.html">
+            <div class="logo">
+              <img class="kevin-logo" src="img/kevin-logo.png" alt="Kevin Martinez Logotype">
+              <h1 class="hidden">KEVIN</h1>
+              <img src="img/kevin_profile_new.jpg" alt="" class="img-circle profile-img visible-xs-block" />
+            </div>
+          </a>
+        </div>
+        <!-- Site Navigation -->
+        <nav class="col-md-6 col-md-offset-2 col-xs-8 col-xs-offset-2 main-nav">
+          <ul class="row">
+            <li class="col-sm-3 col-md-offset-6">
+              <a href="http://kevinmartinez.github.io/blog">Blog</a>
+            </li>
+            <li class="col-sm-3">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--  don't forget the <main> element
+    </main> -->
+
+    <!-- TODO: #1 Semantics, #2 Polymer, #3 srcset -->
+
+    <!-- Presentation section -->
+    <div class="presentation-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center presentation">
+            <h1>Uppgift B2 CSS
+            <span>Presentation</span>
+            <my-element></my-element>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- My introduction text... -->
+    <!-- Intro section -->
+    <section class="intro-section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <!-- TODO: 29/11 2015: Clean up test Polymer components and implement final components -->
+
+            <!-- Main text -->
+            <article class="intro-text text-left">
+              <p>Uppgift B_2 går ut på att skapa en stilmall för webb-projektet www.csszengarden.com. CSS Zen Garden går ut på att visa världen vad CSS går för. Genom att alla som bidrar använder sig utav exakt samma HTML dokument, med en färdig struktur skrivet av teamet bakom CSS Zen Garden och bidrar med sina egna presentationer med hjälp av endast CSS.</p>
+              <p>
+                Grymt rolig uppgift tänkte jag när den delades ut. Men vägen fram till en slutlig design blev lång. Några av mina första tankar och skisser var att försöka återskapa en trädgårdsliknande design, vilket jag snabbt kom på att det måste ha gjorts in absurdum med detta projekt. Mitt andra design / skissval gick ut på att försöka använda en underrubrik i strukturen som lyder: “The Road to Enlightment” och försöka skapa en sorts visuell väg med hjälp av bakgrundsbilder och egen grafik. Men jag fastnade här och beslutade mig för att köra hardcore CSS plugg med vår studieresurs Teamtreehouse.com.
+              </p>
+              <p>
+                Efter att ha gjort klart de flesta av deras kurser inom CSS förutom de mest avancerade så visste jag precis vad jag ville bidra med till the CSS Zen Garden. Nämligen en tutorial-liknande webbsida som beskriver de mest essentiella delarna av CSS med hjälp utav just CSS. Skissen är enkel, jag började med the box model och kände hur kul det var att arbeta med pseudo selektorer och pseudoelement för att kunna placera ut innehåll som inte finns i sidans HTML-struktur. Efter att ha kodat upp den första delen av skissen och insett hur galet mycket man kan göra så beslutade jag mig för att skissa upp CSS Floats för att kunna koda upp och visa hur det fungerar. Jag förstod att det skulle behövas många färger för att få fram budskapet så jag bestämde mig för att använda mig av flat colors, och använde mig av resurserna www.flatuicolors.com och www.flatuicolorpicker.com. Fördelen med de här färgerna var att de är tydliga och fungerar oftast väldigt bra att mixa huller om buller.
+              </p>
+              <p>
+                Jag känner att det här kan utvecklas väldigt mycket och då jag måste lämna in uppgiften så har jag bestämt mig för att fortsätta arbeta vidare på B_2 efter hand med att jag lär mig ännu fler CSS knep under utbildningens gång!
+              </p>
+              <p><strong>Länk till projektet:</strong><a href="http://kevinmartinez.github.io/b_2-css/"> CSS Zen Garden - Kevin Martinez</a>
+              </p>
+              <p><strong>Länk till Github Repo:</strong><a href="https://github.com/kevinmartinez/b_2-css"> b_2-css</a></p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section><!-- Intro section end -->
+
+    <!-- Quote section -->
+    <aside class="quote-section intro-quote">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-offset-4">
+            <blockquote class="blockquote">
+              <p>
+                ”CSS Zen Garden”
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </aside><!-- Quote section end -->
+
+
+    <!-- A footer made with love -->
+    <footer class="main-footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Contact</h5>
+            <paper-input label="kevin@pixelkojan.se"></paper-input>
+            <p>twitter</p>
+            <p>love</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Written in</h5>
+            <p class="footer-margin">HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Learning resources</h5>
+            <p class="footer-margin">Team Treehouse</p>
+            <p>Udacity</p>
+            <p>Code School</p>
+            <p>Tutsplus</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
