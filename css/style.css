@@ -8,6 +8,11 @@ body {
   text-rendering: optimizelegibility;*/
 }
 
+.kevin-logo {
+  width: 200px;
+  margin-top: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -28,9 +33,6 @@ h6 {
   width: 1px;
 }
 
-.kevin-logo {
-  max-width: 200px;
-}
 
 .nav-header {
   background: #415457;
@@ -191,7 +193,9 @@ h2 {
 
 
 
-
+#layer1 {
+  color: red;
+}
 
 
 .quote-section {
@@ -222,9 +226,7 @@ my text editors right side
 
 @media (min-width: 800px) {
 
-  .kevin-logo {
-    max-width: 100%;
-  }
+
 
 
   p {
@@ -308,7 +310,6 @@ my text editors right side
   .main-footer {
     padding: 4em 0 2em;
   }
-
 
 
 
