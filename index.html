@@ -9,18 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800,300,600" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- 1. Load platform support before any code that touches the DOM. -->
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <script src="bower_components/webcomponentsjs/CustomElements.js"></script>
-    <!-- 2. Load the component using an HTML Import -->
-    <link rel="import" href="elements/my-element.html">
-    <link rel="import" href="bower_components/paper-item/paper-item.html">
-    <link rel="import" href="bower_components/paper-button/paper-button.html">
-    <link rel="import" href="bower_components/paper-input/paper-input.html">
-    <link rel="import" href="bower_components/iron-icon/iron-icon.html">
-    <link rel="import" href="bower_components/iron-icons/iron-icons.html">
-    <link rel="import" href="bower_components/iron-range-behaviour/iron-range-behaviour.html">
-    <link rel="import" href="bower_components/paper-progress/paper-progress.html">
   </head>
   <body>
 
@@ -31,12 +19,13 @@
           <!-- Site Logo -->
           <div class="logo">
             <img class="kevin-logo" src="img/kevin-logo.svg" alt="Kevin Martinez Logotype">
-            <h1 class="hidden">KEVIN</h1>
-            <img src="img/kevin_profile_new.jpg" alt="" class="img-circle profile-img visible-xs-block" />
-          </div>
+            <h1 class="hidden">Kevin Martinez Portfolio</h1>
+            <img src="img/kevin_profile_new.jpg" alt="Kevin Martinez" class="img-circle profile-img visible-xs-block">
+          </div><!-- Site logo end -->
         </div>
-        <!-- Site Navigation -->
+        <!-- Site navigation -->
         <nav class="col-md-6 col-md-offset-2 col-xs-8 col-xs-offset-2 main-nav">
+          <h1 class="hidden">Main Navigation</h1>
           <ul class="row">
             <li class="col-sm-3">
               <a href="#about">About</a>
@@ -51,51 +40,31 @@
               <a href="#contact">Contact</a>
             </li>
           </ul>
-        </nav>
+        </nav><!-- Site navigation end -->
       </div>
     </header>
-
-    <!--  don't forget the <main> element
-    </main> -->
-
     <!-- TODO: #1 Semantics, #2 Polymer, #3 srcset -->
 
     <!-- Presentation section -->
-    <div class="presentation-section">
+    <section class="presentation-section">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center presentation">
-            <img src="img/kevin_profile_new.jpg" alt="" class="img-circle profile-img hidden-xs" />
+            <img src="img/kevin_profile_new.jpg" alt="Kevin Martinez" class="img-circle profile-img hidden-xs">
             <h1>Kevin Martinez
             <span>Web Designer &amp; Developer</span>
-            <my-element></my-element>
             </h1>
           </div>
         </div>
       </div>
-    </div>
+    </section><!-- Presentation section end-->
 
-    <!-- My introduction text... -->
-    <!-- Intro section -->
-    <section class="intro-section" id="about">
+    <!-- About me section, my introduction text-->
+    <main class="intro-section" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h2 class="text-center">Welcome to my site</h2>
-
-            <!-- TODO: 29/11 2015: Clean up test Polymer components and implement final components -->
-            <!-- <paper-item>
-              <paper-item-body two-line>
-                <div>Show your status</div>
-                <div secondary>Your status is visible to everyone</div>
-              </paper-item-body>
-              <iron-icon icon="warning"></iron-icon>
-            </paper-item>
-            <paper-input label="Your name here"></paper-input>
-            <demo-element></demo-element>
-            <progress-element></progress-element> -->
-
-            <!-- Main text -->
             <article class="intro-text text-left">
               <h2 class="lead">I am a designer, developer and a dreamer</h2>
               <p>My name is Kevin, i am a open minded web artist and a code monkey with a lot of love for HTML, CSS &amp; JavaScript.</p>
@@ -113,7 +82,7 @@
           </div>
         </div>
       </div>
-    </section><!-- Intro section end -->
+    </main><!-- About me section end -->
 
     <!-- Quote section -->
     <aside class="quote-section intro-quote">
@@ -131,7 +100,7 @@
     </aside><!-- Quote section end -->
 
     <!-- Portfolio section -->
-    <div class="portfolio-section" id="work">
+    <section class="portfolio-section" id="work">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -140,30 +109,30 @@
         </div>
 
         <div class="row">
-          <div class="col-sm-4">
+          <section class="col-sm-4">
             <h2>School Work</h2>
             <p>At the moment i am studying to become a JavaScript Developer at the Swedish Lernia Vocal University.</p>
             <p>These are my school assignments.</p>
-          </div>
-          <div class="col-sm-8">
+          </section>
+          <section class="col-sm-8">
             <div class="row">
               <div class="col-md-6">
-                <a href="b2-css.html"><img src="img/b2-thumb.jpg" alt="my contribution to the CSS Zen Garden"/>
+                <a href="b2-css.html"><img src="img/b2-thumb.jpg" alt="My contribution to the CSS Zen Garden">
                 <h3 class="text-uppercase">B_2</h3>
                 <p>CSS</p></a>
               </div>
               <div class="col-md-6">
-                <a href="b3_b4-reflection.html"><img src="img/webwork-thumb.png" alt="web work's website screenshot"/>
+                <a href="b3_b4-reflection.html"><img src="img/webwork-thumb.png" alt="A screenshot of WebWork's website">
                 <h3 class="text-uppercase">B_3 &amp; B_4</h3>
                 <p>Reflektion</p></a>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-    </div>
+    </section><!-- Portfolio section end -->
 
-    <!-- contact section with contact-form -->
+    <!-- Progress bar info section -->
     <section class="skills">
       <div class="container">
         <div class="row">
@@ -206,7 +175,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- Progress bar info section end -->
 
     <!-- Quote section -->
     <aside class="quote-section outro-quote text-center">
@@ -227,28 +196,26 @@
     <footer class="main-footer" id="contact">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <section class="col-md-4">
             <h5>Contact</h5>
-            <paper-input label="kevin@pixelkojan.se"></paper-input>
+            <p><a href="mailto:kevin@pixelkojan.se?subject=feedback">kevin@pixelkojan.se</a></p>
             <p>twitter</p>
-            <p>love</p>
-          </div>
-          <div class="col-md-4">
+          </section>
+          <section class="col-md-4">
             <h5>Written in</h5>
-            <p class="footer-margin">HTML</p>
+            <p>HTML</p>
             <p>CSS</p>
             <p>JavaScript</p>
-          </div>
-          <div class="col-md-4">
+          </section>
+          <section class="col-md-4">
             <h5>Learning resources</h5>
-            <p class="footer-margin">Team Treehouse</p>
+            <p>Team Treehouse</p>
             <p>Udacity</p>
             <p>Code School</p>
-            <p>Tutsplus</p>
-          </div>
+          </section>
         </div>
       </div>
-    </footer>
+    </footer><!-- Footer end -->
 
     <!-- Scripts -->
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>

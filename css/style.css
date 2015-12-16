@@ -8,11 +8,6 @@ body {
   text-rendering: optimizelegibility;*/
 }
 
-.kevin-logo {
-  width: 200px;
-  margin-top: 20px;
-}
-
 h1,
 h2,
 h3,
@@ -22,6 +17,7 @@ h6 {
   font-family: 'Raleway', sans-serif;
 }
 
+/* Hide main h1 and nav h1 from display but keep them in the HTML outline */
 .hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -33,6 +29,8 @@ h6 {
   width: 1px;
 }
 
+/* Main navigation
+============================== */
 
 .nav-header {
   background: #415457;
@@ -62,6 +60,9 @@ h6 {
   color: #fff;
 }
 
+
+/* Presentation
+============================== */
 .presentation-section {
   background: linear-gradient(rgba(54, 178, 222, 0.8),rgba(54, 178, 222, 0.8)), url(../img/background-small.jpg) no-repeat center;
   background-size: cover;
@@ -93,6 +94,9 @@ h6 {
   font-weight: 800;
 }
 
+
+/* About me section
+============================== */
 .intro-section {
   background: white;
   padding: 2em 0;
@@ -111,17 +115,20 @@ h2 {
   margin-bottom: 3em;
 }
 
+
+/* Portfolio section
+============================== */
 .portfolio-section {
   padding: 2em 0;
 }
 
 
-/* contact section */
+/* Progress bar info section
+============================== */
 .skills {
   padding: 2em 0;
   background: grey;
 }
-
 
 .progress {
     min-height: 2em;
@@ -169,7 +176,8 @@ h2 {
   width: 100%;
 }
 
-/* main footer */
+/* Main footer
+============================== */
 .main-footer {
   background-color: #415457;
   padding: 1.5em 0;
@@ -182,52 +190,9 @@ h2 {
   color: #fff;
 }
 
-.footer-margin {
-  margin-top: 2.3rem;
-}
-
-.adios {
-  border-top: 2px solid white;
-  padding: 1em 0;
-}
-
-
-
-#layer1 {
-  color: red;
-}
-
-
-.quote-section {
-  padding: 1em 0;
-  font-size: 1.5em;
-  background: linear-gradient(rgba(54, 178, 222, 0.5),rgba(54, 178, 222, 0.5)), url(../img/background.jpg) no-repeat center fixed;
-  background-size: cover;
-  color: #fff;
-}
-
-
-
-
-/* ========================================
-
-
-
-MEDIA
-QUERIES
-THIS verbose comment GIVES me
-a visual hint in
-my text editors right side
-
-
-
-
-======================================== */
-
+/* Media Queries
+============================== */
 @media (min-width: 800px) {
-
-
-
 
   p {
     font-size: 1.25em;
@@ -244,9 +209,9 @@ my text editors right side
   }
 
   .presentation-section {
-      height: 75vh;
-      background: linear-gradient(rgba(54, 178, 222, 0.5),rgba(54, 178, 222, 0.5)), url(../img/background.jpg) no-repeat center fixed;
-      background-size: cover;
+    height: 75vh;
+    background: linear-gradient(rgba(54, 178, 222, 0.5),rgba(54, 178, 222, 0.5)), url(../img/background.jpg) no-repeat center fixed;
+    background-size: cover;
   }
 
   .presentation h1 {
@@ -274,43 +239,35 @@ my text editors right side
     margin: 0 auto 1.5em;
   }
 
-
-
   /* contact section */
   .contact {
     height: 500px;
     background: lightblue;
   }
 
-
-
-
-
-
   .quote-section {
     padding: 2em 0;
     font-size: 2.5em;
   }
 
-
-
-
   .presentation-section {
     padding: 5em 0;
   }
+
   .portfolio-section {
     padding: 5em 0;
   }
+
   .intro-section {
     padding: 5em 0;
   }
+
   .skills {
     padding: 5em 0;
   }
+
   .main-footer {
     padding: 4em 0 2em;
   }
-
-
 
 }
