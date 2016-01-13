@@ -1,5 +1,6 @@
 html,
 body {
+  background: lightblue;
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.8em;
@@ -98,7 +99,7 @@ h6 {
 /* About me section
 ============================== */
 .intro-section {
-  background: white;
+  background: lightblue;
   padding: 2em 0;
 }
 
@@ -189,6 +190,42 @@ h2 {
   text-transform: uppercase;
   color: #fff;
 }
+
+
+
+/* Polymer Elements */
+.polymer-test {
+  padding: 25px;
+  background: teal;
+  color: white;
+}
+
+h2.post-title {
+  color: yellow!important;
+}
+
+blog-post::shadow .blog-post {
+  color: pink;
+}
+
+post-title::shadow h2 {
+  color: green;
+}
+
+
+/* overwrites element css.... */
+binding-datazor::shadow h2 {
+  font-weight: bold;
+  font-size: 1vw;
+  color: #2980b9;
+  background: red;
+}
+
+binding-datazor::shadow article {
+  background-color: red;
+}
+
+
 
 /* Media Queries
 ============================== */
