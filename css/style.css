@@ -30,7 +30,7 @@ Remove testing CSS
 
 body {
   font-family: 'Open Sans';
-  background: #3498db;
+  background: #54ACD2;
   color: #2c3e50;
   text-align: center;
 }
@@ -132,7 +132,7 @@ a {
   display: block;
   width: 95%;
   margin-top: 0.3em;
-  color: #FFD358;
+  color: #ECF0F1;
   font-weight: bold;
   padding: 0.6em;
   margin-left: auto;
@@ -149,7 +149,7 @@ a {
 .profile-img-container {
   width: 80%;
   padding: 0.7em 0 0.4em;
-  background: #2980b9;
+  background: #5991B1;
   margin: 0 auto;
 }
 
@@ -182,7 +182,7 @@ a {
 }
 
 #portfolio-section {
-  background: #FFD358;
+  background: #5991B1;
   /*background-image: linear-gradient(to bottom, #3498db, #2980b9, #3498db);*/
   padding: 1em 1em 3em;
 }
@@ -251,7 +251,7 @@ hr {
 
 
 .second-bg {
-  background: #FFD358;
+  background: #5991B1;
 }
 
 .wrapper {
@@ -274,7 +274,7 @@ hr {
 .ss-style-doublediagonal {
 	z-index: 1;
 	padding-top: 6em;
-	background: #FFD358;
+	background: #5991B1;
 }
 
 .ss-style-doublediagonal::before,
@@ -356,11 +356,11 @@ Testing fixed sidebar */
   }
 
   a:hover {
-    color: #95a5a6;
+    color: #977BAB;
   }
 
   .nav a:hover {
-    color: #ecf0f1;
+    color: #043D5D;
   }
 
 
