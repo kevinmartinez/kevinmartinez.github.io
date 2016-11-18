@@ -173,7 +173,7 @@ a {
 }
 
 .pt-lead {
-  color: #FFD358;
+  color: #043D5D;
   font-weight: 800;
 }
 
@@ -233,7 +233,7 @@ h5:last-child {
 .phone a,
 .mail a {
   font-weight: 800;
-  color: #FFD358;
+  color: #42729B;
 }
 
 hr {
@@ -356,7 +356,7 @@ Testing fixed sidebar */
   }
 
   a:hover {
-    color: #977BAB;
+    color: #42729B;
   }
 
   .nav a:hover {
