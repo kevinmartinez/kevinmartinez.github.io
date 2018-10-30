@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kevin Martinez | Portfolio</title>
+  <meta name="description" content="Kevin Martinez Web Developer & Designer in Sweden Portfolio.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans|Dosis:400,800" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Kreon:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700" rel="stylesheet">
+  <!-- en kursiv font för namnet i footern -->
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-87592698-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <!-- Main Navigation -->
+  <!-- TODO TODO TODO OBS WRAPPER DIV CONSIDER TO REFACTOR THIS ENTIRELY -->
+  <div class="wrapper">
+    <nav id="main-navigation">
+      <a class="site-logo" href="#">
+        <h1>Kevin Martinez <span>Front-End Developer</span></h1>
+      </a>
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio-section">Projects</a></li>
+        <li><a href="#main-footer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="main-header clearfix container">
+      <figure class="profile-img-container">
+        <img class="profile-img" src="img/kevin-avatar.svg" alt="Kevin Martinez">
+      </figure>
+      <div class="profile-text">
+        <p class="pt-lead">Hello!</p>
+        <p class="pt-main">
+          My name is Kevin! I am a <b>Web Designer</b> and Web Developer from Chile and Sweden. I study <b>JavaScript</b>
+          and <b>C#</b>. Check out some of my projects below!
+        </p>
+      </div>
+    </header>
+    <!-- Portfolio Section -->
+    <div class="divider ss-style-doublediagonal"></div>
+    <!-- TODO TODO TODO OBSERVE THESE DIVIDER DIVS, DO NOT USE IN PROD -->
+    <div class="second-bg">
+      <!-- TODO: remember to chech <pre> accessibility -->
+      <article class="showcase">
+        <!-- ändra h2 till h3... -->
+        <h3 class="section-heading">Fler kodexempel</h3>
+        <p>Inom webbutveckling, som även går under det engelska namnet Front-End development så använder man tre olika
+          "språk".
+          Det första heter HTML och är ett märkspråk. Det andra heter CSS och är ett designspråk. Det tredje heter
+          JavaScript
+          och är ett programmeringsspråk. Tillsammans utgör dessa treenigheten som gör att vi kan skapa webbsidor</p>
+        <!-- testade först en annan theme stil, cobalt2,
+                  utkommenterad nu, men behåller den i html'en som referens -->
+        <!--<pre class="moo"><code class="language-css"><span class="cobalt-body">body</span> <span class="cobalt-curly">{</span><br>    <span class="cobalt-css-property">color</span>: red;<br><span class="cobalt-curly">}</span></code></pre>-->
+        <section>
+          <h4 class="sub-heading">Exempel på <b>CSS</b> kod</h4>
+          <pre class="moo"><code class="language-css"><span class="dra-comment">/* en kommentar i CSS*/</span><br><span class="dra-selector">.container</span> <span class="cobalt-curly">{</span>
+          <span class="dra-property">max-width</span>: <span class="dra-value">960px</span>;
+          <span class="dra-property">margin</span>: <span class="dra-value">auto</span>;
+      <span class="cobalt-curly">}</span>
+                  </code></pre>
+        </section>
+
+        <section>
+          <h4 class="sub-heading">Exempel på <b>HTML</b> kod</h4>
+          <div>
+            <pre class="moo"><code><span class="dra-comment">&lt;!-- en HTML kommentar --&gt;</span><br><span class="dra-div">&lt;div&gt;</span><span>Hello</span><span class="dra-div">&lt;&#47;div&gt;</span>
+                      </code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h4 class="sub-heading">Exempel på <b>JavaScript</b> kod</h4>
+
+          <div>
+            <pre class="moo"><span class="dra-comment">// en js enrads-kommentar</span><br><br><span class="dra-comment">/* en js kommentar som skrivs<br>på flera rader */</span><br><div class="dra-var">var heading = <span>Hello</span></div><span class="dra-methodCall">function changeText(event) {</span><br>    <span>event.target.textContent = 'moo';</span><br><span>}</span>
+                  </pre>
+          </div>
+        </section>
+
+      </article><!-- /slut kodexempel sektionen -->
+
+      <main role="main" id="portfolio-section" class="container">
+        <h2>Projects</h2>
+        <!-- First Portfolio Row -->
+        <figure class="col">
+          <a href="http://kevinmartinez.github.io/cowspiracy.infographic/">
+            <div class="flip-container">
+              <img class="flip" src="img/calculator.png" alt="">
+            </div>
+          </a>
+          <figcaption>
+            <h3>ChatBot</h3>
+            <p>
+              Built with: Node.js, Express.js, WebSockets
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="col">
+          <a href="http://kevinmartinez.github.io/cowspiracy.infographic/">
+            <div class="flip-container">
+              <img class="flip" src="img/portfolio-13.png" alt="">
+            </div>
+          </a>
+          <figcaption>
+            <h3>Car Rental Supreme</h3>
+            <p>
+              Built with: Node.js Express.js, EJS Templating Language, Mongo DB, Mongoose
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="col">
+          <a href="http://kevinmartinez.github.io/cowspiracy.infographic/">
+            <div class="flip-container">
+              <img class="flip" src="img/travel-app.png" alt="">
+            </div>
+          </a>
+          <figcaption>
+            <h3>Angular Application</h3>
+            <p>
+              Built with: Angular 5, Sass, CSS Grid
+            </p>
+          </figcaption>
+        </figure>
+        <!-- row 2 -->
+        <figure class="col">
+          <a href="http://kevinmartinez.github.io/b_2-css/">
+            <div class="flip-container">
+              <img class="flip" src="img/marketing-page.png" alt="">
+            </div>
+          </a>
+          <figcaption>
+            <h3>CSS Zen Garden Contribution</h3>
+            <p>
+              This is my contribution to the CSS Zen Garden. Trying all kinds of CSS techniques in my stylesheet. It is
+              a crazy page, but
+              check out the CSS and you will be impressed!
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="col">
+          <a href="http://kevinmartinez.github.io/FRO15-B4/">
+            <div class="flip-container">
+              <img class="flip" src="img/search-page.png" alt="">
+            </div>
+          </a>
+          <figcaption>
+            <h3>Group Project</h3>
+            <p>
+              This is a school group project. Our team designed and coded a web-site for a fictitious web bureau. We
+              used Bootstrap 3 as
+              our Front-End framework.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="col">
+          <a href="http://kevinmartinez.github.io/cowspiracy.infographic/">
+            <div class="flip-container">
+              <img class="flip" src="img/note-app.png" alt="">
+            </div>
+          </a>
+          <figcaption>
+            <h3>Cowspiracy Infographic</h3>
+            <p>
+              This is my infographic. It uses facts from the documentary Cowspiracy. Check it out, it has a lot of
+              heavy facts! Hand coded
+              and a lot of love from Sketch involved!
+            </p>
+          </figcaption>
+        </figure>
+      </main>
+    </div>
+    <!-- Main Footer -->
+    <footer id="main-footer">
+      <div>
+        <h2>Contact</h2>
+        <p>
+          If you're interested in chatting or want more information about what I've been working on, I'd love to hear
+          from you!
+        </p>
+        <p class="phone">
+          Phone<a href="tel:+46768804041"> +46 768 804 041</a>
+        </p>
+        <p class="mail">
+          Email<a href="mailto:hej@pixelkojan.se?subject=Aloha"> hej@pixelkojan.se</a></p>
+        <hr>
+        <div class="clearfix">
+          <div class="mobile-bottom clearfix">
+            <h5>Kevin Martinez</h5>
+            <h5><a href="#main-navigation">Back to top</a></h5>
+          </div>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#portfolio-section">Portfolio</a></li>
+              <li><a href="#main-footer">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -32,7 +32,7 @@ body {
   font-family: 'Open Sans';
   background: #54ACD2;
   color: #2c3e50;
-  text-align: center;
+
 }
 
 img {
@@ -643,4 +643,998 @@ Testing fixed sidebar */
     opacity: 0.7;
   }
 
+}
+
+.section-heading,
+.showcase .sub-heading {
+    color: #2c3e50;
+}
+
+/*
+========================================
+pre code block showcase section
+========================================
+*/
+.showcase {
+    background: #ecf0f1;
+    padding: 10% 5%;
+}
+/**
+ *
+ * i pre elementet så kan man skriva text som ska visas som kod, t ex CSS eller JavaScript. Man kan också skriva ut andra sorts instruktioner men för just kod så använder man <code> elementet, det är som <em> och <strong> taggarna, ett 'phrasing-content' element, och ska omge text, i det här fallet vår kod
+ *
+ */
+
+ /* A CSS rule can be defined for the code selector to override the browser's default font face. Preferences set by the user might take precedence over the specified CSS. */
+.moo {
+    background: #282a36;
+    color: #fff;
+    margin: 20px auto 20px; /* <pre> är block-level och kan då centreras med margin: auto */
+    padding: 25px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5px
+
+}
+
+.inline-pre {
+    background: #ccc;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #000;
+    max-width: fit-content;
+    padding-left:  10px;
+    padding-right: 5px;
+}
+
+/* ett span-element med klassen 'cobalt-body' ska representera css selektoren 'body' */
+/*.cobalt-body {
+    color: green;
+}*/
+
+/* här representerar klassen en curly brace i CSS */
+/*.cobalt-curly {
+    color: #fff;
+}*/
+
+/**
+ * cobalt-css-property i det här fallet representerar
+ * en CSS property
+ * cobalt är namnet på ett terminaltema som jag tycker är snyggt
+ * men jag kommer efter att ha testat lite nu nog köra på
+ * ett annat som heter 'dracula' och blir nog snyggare!
+ *
+ */
+/*.cobalt-css-property {
+    color: lightgreen;
+}*/
+
+/* pre tag testing for html and margins */
+.language-html {
+    /*color: white;  DOES NOT WORK*/
+}
+
+/* dracula theme css :) made by kevin */
+
+.dra-comment {
+    color: #6272a4;
+}
+
+.dra-selector {
+    color: #50fa7b;
+}
+
+.dra-property {
+     color: #8be9fd;
+}
+
+.dra-value {
+     color: #bd93f9;
+}
+
+/*.dra-ascii {
+    color: #fff;
+}*/
+
+.dra-div {
+     color: #ff79c6;
+}
+
+/* dracula javascript */
+.dra-var {
+    color: #8be9fd;
+}
+
+.dra-methodCall {
+    color: #f1fa8c;
+}
+
+.dra-func {
+    color: #8be9fd;
+}
+
+
+
+@charset "UTF-8";
+
+/* nice purple color save for later
+    #897FBA;
+ */
+
+/* universiell selektor */
+* {
+    box-sizing: border-box; /* så att padding och border räknas med i total element width */
+}
+
+html {
+    font-size: 100%; /* root font-size, för att använda rem till text */
+}
+
+body,
+p {
+    font-family: 'Josefin Slab', serif;
+}
+
+body {
+    background: #F6F7F2;
+    /* color: red;  för att se om någon del defaultar till body */
+}
+
+p {
+    line-height: 1.5; /* radhöjd */
+
+}
+
+p {
+   margin-bottom: 20px;  /* I like to keep the indentation length equal to the line height. */
+}
+
+/* a styles TODO: change so that not ALL a elements are affected */
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #2C82C9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* delade stilar */
+.main-header,
+footer {
+    padding: 5%;
+}
+
+.main-header,
+.sub-header,
+footer {
+    text-align: center;
+}
+
+.main-header,
+.main-footer {
+    background-color: #3E4651;
+}
+
+.main-header {
+    background-color: #ecf0f1;
+}
+
+/* svg image class */
+.thunderbolt {
+    max-width: 300px;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+
+#code-background {
+    transform: translate(40px, 40px);
+}
+
+#code {
+  animation: fall 20s ease-in infinite;
+  animation-name: fall;
+  /*animation-duration: 5s;*/
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /*overflow: hidden;*/
+  /*width: 100px;
+  left: 50px;*/
+}
+@keyframes fall {
+  from {
+    transform: translateY(-220px);
+  }
+  to {
+    transform: translateY(60px)
+  }
+}
+
+h5 {
+    margin-top: 0;
+}
+
+footer p:nth-child(5) {
+    margin-bottom: 3%;
+}
+
+.main-header {
+    padding-top: 10%;
+    height: 100vh;
+    background-image: url(../img/keyboard.svg), url(../img/mug.svg), url(../img/usb-stick.svg);
+    background-repeat: no-repeat;
+    background-size: 200px, 100px, 50px;
+    background-position: 85% 70%, 10% 10%, 20% 80%;
+
+
+    /**
+     * skapar en skugga vertikalt med 2px och blureffekt av 5px
+     * genom att välja en mörk färg så skapar det en bra kontrast
+     * av skugga mot sidans färger
+     */
+    /*box-shadow: 0 3px 10px #000;*/
+}
+
+.main-heading,/* ändra efter att div parent är borta i markup */
+h5 {
+    font-family: 'Kreon', 'Times New Roman', Times, serif; /* en font-stack för seriffer */
+}
+
+.main-heading,
+.footer-heading {
+    color: #BFE6EC;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+.main-heading {
+    color: #2c3e50;
+    display: inline-block;
+    max-width: 90%;
+    font-weight: 900;
+    position: relative;
+    line-height: 1.1;
+    margin: 0;
+    /*font: 900 2.5rem/125% 'Kreon', serif; /* font shorthand */
+}
+
+.heading-span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Rubik', Verdana;
+    font-size: 0.5rem;
+    line-height: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #2980b9;
+}
+.section-heading,
+.sub-heading,
+label[for="name"],
+label[for="value"],
+label[for="email"],
+label[for="textarea"] {
+    font-family: 'Rubik', Verdana;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+/*label[for="name"],
+label[for="value"],
+label[for="email"] {
+	color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+}*/
+.presentation .sub-heading,
+.form-section label[for] {
+    color: #fff;
+}
+.section-heading,
+.showcase .sub-heading {
+    color: #2c3e50;
+}
+
+.section-heading {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+}
+
+.section-heading:first-child {
+    margin-top: 0; /* ta bort den övre marginalen för alla klasser med namn section-heading som är first child i en container */
+}
+
+.sub-heading,
+label[for="name"],
+label[for="value"],
+label[for="email"],
+label[for="textarea"] {
+    font-size: 1.2rem;
+}
+
+.sub-header {
+    padding: 5% 0 10%;
+    background: #FEFEFE;
+}
+/*
+========================================
+presentation sektion
+========================================
+*/
+.pres-section {
+    background: #34495e;
+    padding: 8% 0;
+}
+
+.pres-section h3,
+.pres-section p {
+    color: #ecf0f1
+}
+
+/* the container */
+.presentation {
+    display: flex; /* gör så att child element blir flex-items */
+    /*flex-direction: column;*/
+    /*flex-wrap: wrap;*/
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    /*justify-content: space-around;*/
+    flex-flow: column wrap; /* korthand för flex-direction och flex-wrap */
+}
+
+/* task-header */
+.task-header {
+    /*flex-grow: 1; */
+    /* flex-basis: auto;*/ /* värdet auto gör så att bredden är = flex-grow */
+    /*flex: 1; /* flex är shorthand för flex-grow, flex-shrin och flex-basis */
+    justify-content: center;
+   /* flex-basis: 30%;  bredd på flex item */
+    flex-grow: 1;
+    flex: 2 2;
+    border: 5px goldenrod;
+    height: 200px;
+}
+.task-title {
+    color: black;
+    font-size: 2rem;
+}
+.task-body {
+    /*flex-grow: 2;
+    flex-basis: auto;*/
+    /*width: 40%;*/
+    /*flex: 1;*/
+    flex-grow: 1;
+    flex: 1 1 1;
+    /*flex-basis: 70%;*/
+    /*padding: 5%;*/
+    /*flex-grow:1;
+    flex-basis: auto;*/
+    /*background: green;*/
+}
+
+.html5-logo {
+    max-width: 100px;
+    opacity: .9;
+    color: black;
+    width: 100%;
+    z-index: -10000;
+}
+
+
+/*
+========================================
+
+TODO copy and remove! THIS IS FOR TABLES
+========================================
+*/
+
+/* TODO: Fix table */
+/*table {
+    width: 90%;
+    border: 2px solid #2980B9;
+}
+
+tbody tr:first-child {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+tbody tr:first-child th {
+    color: red;
+    background: green;
+    display: block;
+    width: 100%;
+}
+
+tbody tr:nth-child(1) td {
+    color: red;
+    background: green;
+    display: block;
+    width: 100%;
+}*/
+
+/* Force table to not be like tables anymore */
+/*table, thead, tbody, th, td, tr {
+    display: block;
+}*/
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+/*thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}*/
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+/*table {
+  width: 100%;
+  border-collapse: collapse;
+}*/
+/* Zebra striping */
+/*tr:nth-of-type(odd) {
+  background: #eee;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}*/
+/*td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}*/
+
+
+
+/* footer
+======================================== */
+/* TODO: Fix footer */
+
+aside a {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+aside a[href^=mailto]:link {
+    font-family: 'Grand Hotel', cursive;
+    display: inline-block;
+    color: #ecf0f1;
+    margin: 15px;
+    text-decoration: underline;
+    transition: 1s ease-out;
+}
+
+.author-name {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 3rem;
+    color: #ecf0f1;
+    margin-top: 0;
+}
+
+aside a[href^=mailto]:link:hover {
+    color: #2ecc71;
+}
+
+footer p {
+    color: #BFE6EC;
+}
+
+.github-link img {
+    max-width: 120px;
+}
+
+/* thoughts section
+======================================== */
+
+.thoughts-section{
+    padding: 6%;
+    background: #3498db;
+}
+
+
+/* form section
+======================================== */
+
+.form-outer {
+    background: #2c3e50; /*#34495e*/
+    margin: auto;
+    padding: 2%;
+}
+
+.form-section {
+    padding: 8%; /* TODO: remove and unite with shared styles */
+    background: #e7e7e7;
+}
+
+/* stil för formelementet */
+form {
+    margin: auto;
+}
+
+label[for="name"],
+label[for="value"],
+label[for="email"] {
+	color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*::-webkit-input-placeholder {
+   color: red;
+}*/
+
+/*:-moz-placeholder {  Firefox 18- /*
+   color: red;
+}/*
+
+/* ::-moz-placeholder {  Firefox 19+ */
+   /*color: red;
+}*/
+/*
+:-ms-input-placeholder {
+   color: red;
+}
+
+::-webkit-input-placeholder {
+    color: green;
+}*/
+
+/* för edge */
+input
+/* för opera & edge */
+input::-webkit-input-placeholder {
+    color: green;
+}
+/* för mozilla firefox */
+::-moz-placeholder {
+    color: green;
+}
+/* för ie... */
+:-ms-input-placeholder {
+    color: green;
+}
+/*  */
+input::placeholder {
+    color: green;
+}
+
+
+
+
+
+button, input, select, textarea {
+    padding: 5%;
+    font-family : 'Rubik';
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+input, textarea, select, button {
+    margin: 0;
+}
+
+label {
+    display: block; /* behöver ha label på  */
+    display: inline-block;
+}
+
+/*input[type=text] {
+    padding: 5px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 0;
+    -webkit-appearance: none;
+}*/
+
+input, textarea {
+    font-family: 'Rubik';
+    width: 100%;
+    border: none;
+    padding : 20px 10px;
+    margin  : 0;
+    background: none;
+}
+
+input {
+    background: #fff;
+}
+
+/* on focus */
+input:focus, textarea:focus {
+  background   : rgba(0,0,0,.1);
+  background: #9b59b6;
+  /*border-radius: 5px;*/
+  outline      : none; /* removes the outline blue */
+  transition: 0.5s;
+}
+
+textarea {
+    margin-top: 40px;
+    display: block;
+    padding : 10px;
+    /*width   : 340px;
+    height  : 360px;*/
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    resize  : none;
+    overflow: auto;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    background   : #3498db;
+    cursor: pointer;
+    transition: 0.8s ease-out;
+    color: #FFF;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #2980b9;
+}
+
+
+
+
+/*
+========================================
+pre code block showcase section
+========================================
+*/
+.showcase {
+    background: #ecf0f1;
+    padding: 10% 5%;
+}
+/**
+ *
+ * i pre elementet så kan man skriva text som ska visas som kod, t ex CSS eller JavaScript. Man kan också skriva ut andra sorts instruktioner men för just kod så använder man <code> elementet, det är som <em> och <strong> taggarna, ett 'phrasing-content' element, och ska omge text, i det här fallet vår kod
+ *
+ */
+
+ /* A CSS rule can be defined for the code selector to override the browser's default font face. Preferences set by the user might take precedence over the specified CSS. */
+.moo {
+    background: #282a36;
+    color: #fff;
+    margin: 20px auto 20px; /* <pre> är block-level och kan då centreras med margin: auto */
+    padding: 25px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    letter-spacing: 0.5px
+
+}
+
+.inline-pre {
+    background: #ccc;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #000;
+    max-width: fit-content;
+    padding-left:  10px;
+    padding-right: 5px;
+}
+
+/* ett span-element med klassen 'cobalt-body' ska representera css selektoren 'body' */
+/*.cobalt-body {
+    color: green;
+}*/
+
+/* här representerar klassen en curly brace i CSS */
+/*.cobalt-curly {
+    color: #fff;
+}*/
+
+/**
+ * cobalt-css-property i det här fallet representerar
+ * en CSS property
+ * cobalt är namnet på ett terminaltema som jag tycker är snyggt
+ * men jag kommer efter att ha testat lite nu nog köra på
+ * ett annat som heter 'dracula' och blir nog snyggare!
+ *
+ */
+/*.cobalt-css-property {
+    color: lightgreen;
+}*/
+
+/* pre tag testing for html and margins */
+.language-html {
+    /*color: white;  DOES NOT WORK*/
+}
+
+/* dracula theme css :) made by kevin */
+
+.dra-comment {
+    color: #6272a4;
+}
+
+.dra-selector {
+    color: #50fa7b;
+}
+
+.dra-property {
+     color: #8be9fd;
+}
+
+.dra-value {
+     color: #bd93f9;
+}
+
+/*.dra-ascii {
+    color: #fff;
+}*/
+
+.dra-div {
+     color: #ff79c6;
+}
+
+/* dracula javascript */
+.dra-var {
+    color: #8be9fd;
+}
+
+.dra-methodCall {
+    color: #f1fa8c;
+}
+
+.dra-func {
+    color: #8be9fd;
+}
+
+
+/*
+========================================
+========================================
+========================================
+THIS IS FOR TESTING A PIE CHART IN CSS
+========================================
+========================================
+========================================
+*/
+
+
+.test-pie h3,
+.test-pie p {
+    color: #34495e;
+}
+
+.pie-chart {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background: #EB9532;
+    border-radius: 50%;
+}
+
+.pie-chart::before {
+    position: absolute;
+    content: "";
+    display: block;
+    background: #C82647;
+    height: 150px;
+    width: 150px;
+    border-top-left-radius: 100%;
+}
+
+.pie-chart::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    background: #8870FF;
+    height: 150px;
+    width: 150px;
+    border-bottom-left-radius: 100%;
+}
+
+
+
+/* snickra ihop css element för någon sorts procentpiecharts  */
+.percent-badge {
+    height: 300px;
+    width: 300px;
+    background: inherit;
+    border-radius: 50%;
+    border-left: 40px solid #01C26E;
+    border-top: 40px solid #D8E1E8;
+    border-right: 40px solid #D8E1E8;
+    border-bottom: 40px solid #D8E1E8;
+    /*border-left-width: 20px;
+    border-right-width: 20px;*/
+    /*padding: 5%;*/
+}
+
+.percent-badge span {
+    font-size: 7rem;
+    align-self: 50px 50px;
+    font-weight: 700;
+    color: #D8E1E8;
+    display: block;
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+
+
+
+/*
+========================================
+media query för mellanstorlekar
+========================================
+*/
+@media (min-width: 600px) {
+    /* the container */
+    .presentation {
+        display: flex; /* gör så att child element blir flex-items */
+        /*flex-direction: column;*/
+        /*flex-wrap: wrap;*/
+        min-height: 100vh;
+        /*justify-content: space-around;*/
+        flex-flow: row wrap; /* korthand för flex-direction och flex-wrap */
+    }
+
+    /* task-header */
+    .task-header {
+        /*flex-grow: 1; */
+        /* flex-basis: auto;*/ /* värdet auto gör så att bredden är = flex-grow */
+        /*flex: 1; /* flex är shorthand för flex-grow, flex-shrin och flex-basis */
+        justify-content: center;
+        flex-basis: 20%; /* bredd på flex item */
+        flex-grow: 0;
+    }
+
+    .task-title {
+        font-size: 2rem;
+    }
+
+    .task-body {
+        /*flex-grow: 2;
+        flex-basis: auto;*/
+        /*width: 40%;*/
+        /*flex: 1;*/
+        flex-grow: 0;
+        flex-basis: 80%;
+        /*padding: 5%;*/
+        /*flex-grow:1;
+        flex-basis: auto;*/
+    }
+    p {
+        font-size: 1.25rem;
+        color: #000;
+    }
+    /*h3 {
+        font-size: 10rem;
+    }*/
+
+   .moo {
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+    .main-heading,
+    .footer-heading {
+        font-size: 3.5rem;
+    }
+    p {
+        max-width: 600px;
+    }
+    p {
+    margin:0 auto;
+    }
+
+    p + p {
+    margin-top:10px; /* bara de paragrapher som har en paragraph ovanför sig i html'en får en top margin */
+    }
+    .showcase h3 + p::first-letter {
+        color: red;
+    }
+    .section-heading {
+        font-size: 2.3rem;
+        text-shadow: 0px 2px 3px rgba(255,255,255,0.3);
+    }
+    .sub-heading,
+    label[for="name"],
+    label[for="value"],
+    label[for="email"],
+    label[for="textarea"] {
+        font-size: 1.6rem;
+    }
+
+    label[for="name"],
+    label[for="value"],
+    label[for="email"],
+    label[for="textarea"] {
+    display: block;
+    font-weight: bold;
+    margin: 1.33em 0;
+    }
+
+
+
+
+
+/* form section
+======================================== */
+
+.form-outer {
+    padding: 2%;
+    max-width: 600px;
+}
+
+
+
+
+
+
+    /* TODO: Fix this */
+    /*table {
+        max-width: 900px;
+        margin: auto;
+    }*/
+    /*tbody tr:nth-child(2) p {
+        font-weight: 300;
+    }
+    tbody tr:nth-child(3) p {
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    tbody tr:nth-child(4) p {
+        font-weight: 600;
+    }
+    tbody tr:nth-child(5) p {
+        font-weight: 700;
+    }*/
+    /* footer
+    ======================================== */
+    /*.footer-heading {
+        color: #D6DAC2;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }*/
+
+
+    /*
+    ========================================
+    ========================================
+    ========================================
+    TODO TESTING THS FOR TABLE
+    ========================================
+    ========================================
+    ========================================
+    */
+    /*td,
+    th {
+        display: table-cell;
+    }
+    tr {
+        display: table-row;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tbody {
+        display: table-row-group;
+    }
+    table {
+        display: table;
+    }*/
+    /* Hide table headers (but not display: none;, for accessibility) */
+	/*thead tr {
+		position: inherit;
+	}*/
 }
